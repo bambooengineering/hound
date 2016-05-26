@@ -36,6 +36,7 @@ gem "sass-rails"
 gem "split", require: "split/dashboard"
 gem "stripe"
 gem "uglifier", ">= 2.7.2"
+gem 'therubyracer' # Needed to run coffeescript in Docker containers
 
 group :staging, :production do
   gem "rack-timeout"
