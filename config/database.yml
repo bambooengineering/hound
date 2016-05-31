@@ -7,7 +7,3 @@ development: &default
   host: <%= ENV.fetch('DB_HOST') %>
   port: <%= ENV.fetch('DB_PORT') %>
   reconnect: true
-
-test:
-  <<: *default
-  database: hound_test
